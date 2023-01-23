@@ -1,2 +1,2 @@
 # nvim
-NVIM config base on ThePrimeagen nvim config (obviously)
+NVIM config based on ThePrimeagen nvim config (obviously)
