@@ -3,15 +3,7 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 
-lsp.ensure_installed({
-  'tsserver',
-  'eslint',
-  'sumneko_lua',
-  'rust_analyzer',
-})
-
--- Fix Undefined global 'vim'
-lsp.configure('sumneko_lua', {
+lsp.configure('lua_language_server', {
     settings = {
         Lua = {
             diagnostics = {
@@ -20,7 +12,6 @@ lsp.configure('sumneko_lua', {
         }
     }
 })
-
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
