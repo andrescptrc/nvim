@@ -13,10 +13,12 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-    use {
-        'svrana/neosolarized.nvim',
-        requires = { 'tjdevries/colorbuddy.nvim' }
-    }
+    -- use {
+       --  'svrana/neosolarized.nvim',
+        -- requires = { 'tjdevries/colorbuddy.nvim' }
+    -- }
+
+    use { "catppuccin/nvim", as = "catppuccin" }
 
     use('norcalli/nvim-colorizer.lua')
     use('windwp/nvim-autopairs')
